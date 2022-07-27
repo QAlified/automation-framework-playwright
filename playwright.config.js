@@ -15,6 +15,7 @@ const { devices } = require('@playwright/test');
 const config = {
   testDir: './tests',
 
+
   /* Maximum time one test can run for. */
   timeout: 30 * 1000,
   expect: {
@@ -39,65 +40,50 @@ const config = {
     /* Maximum time each action such as `click()` can take. Defaults to 0 (no limit). */
     actionTimeout: 0,
     /* Base URL to use in actions like `await page.goto('/')`. */
-    // baseURL: 'http://localhost:3000',
+    baseURL: 'https://pokeapi.co',
 
     /* Collect trace when retrying the failed test. See https://playwright.dev/docs/trace-viewer */
     trace: 'on-first-retry',
+
+    launchOptions: {
+      slowMo: 1000,
+    },
   },
 
   /* Configure projects for major browsers */
   projects: [
-   /* {
-      name: 'chromium',
+    {
+      name: 'Google Chrome',
       use: {
-        ...devices['Desktop Chrome'],
+        channel: 'chrome',
+        headless: false,
       },
-    },
-
+    }]
+  /* 
     {
       name: 'firefox',
       use: {
         ...devices['Desktop Firefox'],
+        headless: false,
       },
     },
 
+  //   Vista de celular. 
     {
-      name: 'webkit',
+      name: 'Mobile Chrome',
       use: {
-        ...devices['Desktop Safari'],
+        ...devices['Pixel 5'],
+        headless: false,
       },
-    },*/
-
-    /* Test against mobile viewports. */
-    // {
-    //   name: 'Mobile Chrome',
-    //   use: {
-    //     ...devices['Pixel 5'],
-    //   },
-    // },
-    // {
-    //   name: 'Mobile Safari',
-    //   use: {
-    //     ...devices['iPhone 12'],
-    //   },
-    // },
-
-    /* Test against branded browsers. */
-    // {
-    //   name: 'Microsoft Edge',
-    //   use: {
-    //     channel: 'msedge',
-    //   },
-    // },
-     {
-       name: 'Google Chrome',
-       use: {
-         channel: 'chrome',
-         headless: false,
-       },
      },
+     {
+      name: 'Mobile Safari',
+     use: {
+        ...devices['iPhone 12'],
+      },
+     },   
   ],
-
+*/
   /* Folder for test artifacts such as screenshots, videos, traces, etc. */
   // outputDir: 'test-results/',
 

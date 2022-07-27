@@ -1,0 +1,5 @@
+{
+   
+    "pokemonId":"(//tr/td[@class='cell-name']/a[contains(text(),'#Repl')]//ancestor::tr/td/span[@class='infocard-cell-data'])[1]",
+    "pokemonName":"(//tr/td[@class='cell-num cell-fixed']/span[@class='infocard-cell-data' and contains(text(), '#Repl')]//ancestor::tr/td/a[@class='ent-name'])[1]"
+}

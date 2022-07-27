@@ -1,0 +1,19 @@
+{
+    "Home":{
+
+        "buttonMakeAppointment":"#btn-make-appointment",
+        "buttonMenu":"#menu-toggle"
+    },
+
+    "Login":{
+
+        "inputUsername":"#txt-username",
+
+        "inputPassword":"#txt-password",
+
+        "buttonLogin": "#btn-login",
+
+        "buttonLogout":"//a[.='Logout']"
+
+    }  
+}
