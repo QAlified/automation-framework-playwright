@@ -28,9 +28,11 @@ A continuación se describen los pasos para descargar e instalar el template y v
 3. Desde la barra de herramientas superior, dirigirse a _Terminal > New Terminal_
 4. Desde la terminal, ejecutar el comando _npm install_
 
+Este proceso también se puede realizar desde una terminal nativa de su sistema operativo.
+
 ## Diseño de pruebas ⚙️
 
-A continuación de presenta información y ejemplos que detallan cómo comenzar a crear las pruebas automatizadas usando las clases del template.
+A continuación se presenta información y ejemplos que detallan cómo comenzar a crear las pruebas automatizadas usando las clases del template.
 
 Si ya estás familiarizad@ con los conceptos de Playwright, te invitamos a analizar y comprender la estructura de clases y paquetes del template.
 
