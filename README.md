@@ -2,7 +2,7 @@
 
 El proyecto consiste en un framework de automatización de pruebas basado en Playwright que sirve como punto de partida en cualquier proyecto de automatización de pruebas web UI.
 
-Este framework provee todas las funcionalidades necesarias para abordar la automatización de pruebas web con Selenium de una forma estándar, reduciendo tiempos de configuración y construcción, minimizando la curva de aprendizaje y el nivel técnico requerido para su uso.
+Este framework provee todas las funcionalidades necesarias para abordar la automatización de pruebas web con Playwright de una forma estándar, reduciendo tiempos de configuración y construcción, minimizando la curva de aprendizaje y el nivel técnico requerido para su uso.
 
 A su vez, encapsula lógica en común y brinda un marco de trabajo fácilmente configurable y extendible según la necesidad de cada proyecto.
 
