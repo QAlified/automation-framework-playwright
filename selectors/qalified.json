@@ -1,6 +1,6 @@
 {     
         "aNews":"text=NEWS",
        "buttonContact":"//a[.='CONTACT US']",
-        "inputName":"[name='txtName']",
-        "textArea_msg":"[name='txtMsg']"
+        "inputName":"//input[@id='fullname']",
+        "textArea_msg":"//textarea[@placeholder='Message']"
 }

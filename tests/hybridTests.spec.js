@@ -13,7 +13,7 @@ test.describe('Tests hibridos sobre api y web base datos pokemon', () => {
     test('Generar id en Api y verificar dato en web', async ({ request, page }) => {
 
     //Se guarda el valor devuelto de la función generarIdPokemonAzar() en una variable
-    let pokemonId = Pokedex.generarIdPokemonAzar();
+    let pokemonId = await Pokedex.generarIdPokemonAzar();
         //Se define la clase 'Request' dentro del test para acceder a la misma
         const peticion = new Request(request);
         //Se invoca la función getPokemon con la variable pokemonId como input

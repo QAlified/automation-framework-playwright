@@ -57,9 +57,13 @@ const config = {
       name: 'Google Chrome',
       use: {
         channel: 'chrome',
+        //Este parámetro se utiliza con valor false para poder visualizar el navegador, en caso de que los test visuales fallen o que
+        //no se quiera ver el navegador, setear en true.
         headless: false,
       },
-    }]
+    },
+  
+  ]
   /* 
     {
       name: 'firefox',

@@ -10,7 +10,7 @@ module.exports = {
 
     async generarIdPokemonAzar() {
     //Se devuelve un número redondeado hacia arriba más uno, el cuál es el resultado ente un número aleatorio multiplicado por 905
-    return Math.floor(Math.random() * (905)) + 1;
+    return Math.floor(Math.random() * (5)) + 1;
     },
     //Se redirige a la URL especificada en el parámetro pokemonDatabase
     async  goToPokedex (page) {
