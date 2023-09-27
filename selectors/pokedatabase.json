@@ -1,5 +1,6 @@
 {
    
-    "pokemonId":"(//tr/td[@class='cell-name']/a[contains(text(),'#Repl')]//ancestor::tr/td/span[@class='infocard-cell-data'])[1]",
-    "pokemonName":"(//tr/td[@class='cell-num cell-fixed']/span[@class='infocard-cell-data' and contains(text(), '#Repl')]//ancestor::tr/td/a[@class='ent-name'])[1]"
+    "pokemonId":"(//td[@class='cell-name']/a[@class='ent-name'and text()='#Repl'])[1]/../preceding-sibling::td",
+    "pokemonName":"(//td[@class='cell-num cell-fixed']/span[@class='infocard-cell-data'and text()='#Repl'])[1]/../following-sibling::td[@class='cell-name']"
+
 }

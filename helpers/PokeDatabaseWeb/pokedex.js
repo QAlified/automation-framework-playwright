@@ -10,7 +10,7 @@ module.exports = {
 
     async generarIdPokemonAzar() {
     //Se devuelve un número redondeado hacia arriba más uno, el cuál es el resultado ente un número aleatorio multiplicado por 905
-    return Math.floor(Math.random() * (5)) + 1;
+    return Math.floor(Math.random() * (50)) + 1;
     },
     //Se redirige a la URL especificada en el parámetro pokemonDatabase
     async  goToPokedex (page) {
@@ -26,7 +26,7 @@ module.exports = {
     
     //Se verifica que el elemento 'name' sea igual al valor 'nameExpected' en minúscula
     async verifyPokemonNamefromId (page, id, nameExpected) {
-        const name = await page.innerText(selectors.pokemonName.replace("#Repl", id))
+        const name = await page.innerText(selectors.pokemonName.replace("#Repl", id.toString().padStart(4, '0')))
         await expect(name.toLowerCase()).toEqual(nameExpected.toLowerCase())
     },
 

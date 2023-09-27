@@ -23,6 +23,7 @@ test.describe('Tests hibridos sobre api y web base datos pokemon', () => {
         
         //Se convierte la respuesta de la petición a formato JSON
         const pokemonData = await requestPokemon.json()
+        console.log("Datos obtenidos de la api:"+ pokemonData.name + " "+pokemonData.id )
 
          //Se invoca la función goToPokedex y posteriormente verifyPokemonNamefromId
         await  Pokedex.goToPokedex(page)
